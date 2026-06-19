@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <!--bootstrap 5.2-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+  
+    <header class="p-3 bg-dark text-white">
+      <div class="container d-flex justify-content-between align-items-center">
+        <h1 class="h4 m-0">Meu projeto </h1>
+        <nav>
+            <a  HREF="#" class="text-white me-3 text-decoration-none">
+                Home
+            </a>
+            <a href="#" class="text-white me-3 text-decoration-none">
+                Recursos
+            </a>
+            <button class="btn btn-warning"
+             data-bs-toggle="modal"
+            data-bs-target="#modalLogin"
+             >
+             Login
+            </button>
+        </nav>
+    </div>
+      
+    </header>
+    <main>
+         <section id="home" class="container py-5 text-center">
+            <h2 class="display-5 fw-bold">
+                Sistema simples com bootstrap
+            </h2>
+            <p class="lead">
+                Uma pagina inicial usando html 5,bootstrap,modal de login,cards e validação com javaScript.
+
+            </p>
+
+
+         </section> 
+
+         <section id="recursos" class="container py-4">
+            <h2 class="mb-4">Features</h2>
+            <div class="row g-4">
+              <article class="col-md-4">
+                <div class="card h-100 p-3">
+                  <i class="bi bi-window fs-1 text-primary"></i>
+                  <h3 class="h5 mt-3">HTML5</h3>
+                  <p>Estrutura semântica com header, main, section, article e footer.</p>
+                </div>
+              </article>
+              <article class="col-md-4">
+                <div class="card h-100 p-3">
+                  <i class="bi bi-bootstrap fs-1 text-primary"></i>
+                  <h3 class="h5 mt-3">Bootstrap</h3>
+                  <p>Layout responsivo com botões, cards, modal, grid e navbar.</p>
+                </div>
+              </article>
+              <article class="col-md-4">
+                <div class="card h-100 p-3">
+                  <i class="bi bi-code-slash fs-1 text-primary"></i>
+                  <h3 class="h5 mt-3">JavaScript</h3>
+                  <p>Validação simples de e-mail e senha antes de entrar no admin.</p>
+                </div>
+              </article>
+            </div>
+          </section>
+
+
+
+    </main>
+    <!--bootstrap 5.2-->
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
