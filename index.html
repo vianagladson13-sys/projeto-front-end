@@ -122,28 +122,44 @@
     <div class="modal fade" id="modalLogin" tabindex="-1" aria-hidden="false">
         <div class="modal-dialog">
             <div class="modal-content">
-             <form id="formLogin">
-                <div class="modal-header">
-                    <h5 class="modal-title">Login</h5>
-                     <button 
-                     type="button"
-                     class="btn-close"
-                     data-bs-dismiss="modal">
-                    </button>
-                     
-
-                </div>
-                <div class="modal-body">
-                    <p>formulario para segunda</p>
-                </div>
-                <div class="modal-footer">
-                    <button>segunda</button>
-                    <button>segunda</button>
+                <form id="formLogin">
+                    <div class="modal-header">
+                        <h5 class="modal-title">Login</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal">
+                        </button>
 
 
-                </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="mb-3">
 
-            </form>
+                            <label for="email" class="form-label">E-mail</label>
+                            <div class="input-group text">
+                                <span class="input-group-text"><i class="bi bi-envelope"></i></span>
+                                <input type="email" id="email" class="form-control" placeholder="seuemail@exemplo.com">
+
+                            </div>
+                        </div>
+
+                        <div class="modal-body">
+                            <div class="mb-3">
+
+                                <label for="senha" class="form-label">Senha</label>
+                                <div class="input-group text">
+                                    <span class="input-group-text"><i class="bi bi-lock"></i></span>
+                                    <input type="password" id="senha" class="form-control">
+                                </div>
+                            </div>
+                            <div id="mensagemErro" class="alert alert-danger d-none">
+                                E-mail ou senhas incorretos
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary"> cancelar </button>
+                            <button type="button" class="btn btn-primary"> entrar </button>
+                        </div>
+
+                </form>
 
             </div>
         </div>
