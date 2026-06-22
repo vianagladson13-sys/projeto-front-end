@@ -15,22 +15,50 @@
 <body>
 
 
-    <header class="p-3 bg-dark text-white">
-        <div class="container d-flex justify-content-between align-items-center">
-            <h1 class="h4 m-0">Meu projeto </h1>
-            <nav>
-                <a HREF="#" class="text-white me-3 text-decoration-none">
-                    Home
-                </a>
-                <a href="#" class="text-white me-3 text-decoration-none">
-                    Recursos
-                </a>
-                <button class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#modalLogin">
-                    Login
-                </button>
-            </nav>
-        </div>
+    <!--comentario HTML-->
 
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark shadow">
+            <div class="container">
+                <a class="navbar-brand fw-bold" href="#">
+                    🚀 Meu Projeto
+                </a>
+    
+                <button class="navbar-toggler" type="button"
+                        data-bs-toggle="collapse"
+                        data-bs-target="#menuPrincipal">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+    
+                <div class="collapse navbar-collapse" id="menuPrincipal">
+                    <ul class="navbar-nav me-auto ms-4">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Home</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Recursos</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Preços</a>
+                        </li>
+    
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contato</a>
+                        </li>
+                    </ul>
+    
+                    <button class="btn btn-outline-light me-2">
+                        Entrar
+                    </button>
+    
+                    <button class="btn btn-warning">
+                        Cadastre-se
+                    </button>
+                </div>
+            </div>
+        </nav>
     </header>
     <main>
         <section id="home" class="container py-5 text-center">
