@@ -49,7 +49,9 @@
                         </li>
                     </ul>
     
-                    <button class="btn btn-outline-light me-2">
+                    <button class="btn btn-outline-light me-2" 
+                    data-bs-toggle="modal"
+                    data-bs-target="#modalLogin">
                         Entrar
                     </button>
     
@@ -147,46 +149,104 @@
         <p class="m-0"> Projeto criado para aula de bootstrap 5</p>
     </footer>
     <!-- modal -->
-    <div class="modal fade" id="modalLogin" tabindex="-1" aria-hidden="false">
-        <div class="modal-dialog">
-            <div class="modal-content">
+    <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLoginLabel">
+
+        <div class="modal-dialog modal-dialog-centered">
+    
+            <div class="modal-content shadow-lg border-0 rounded-4">
+    
                 <form id="formLogin">
-                    <div class="modal-header">
-                        <h5 class="modal-title">Login</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal">
+    
+                    <div class="modal-header border-0">
+                        <h5 class="modal-title fw-bold" id="modalLoginLabel">
+                            🔐 Login
+                        </h5>
+    
+                        <button
+                            type="button"
+                            class="btn-close"
+                            data-bs-dismiss="modal">
                         </button>
-
-
                     </div>
+    
                     <div class="modal-body">
+    
                         <div class="mb-3">
-
-                            <label for="email" class="form-label">E-mail</label>
-                            <div class="input-group text">
-                                <span class="input-group-text"><i class="bi bi-envelope"></i></span>
-                                <input type="email" id="email" class="form-control" placeholder="seuemail@exemplo.com">
-
+    
+                            <label for="email" class="form-label">
+                                E-mail
+                            </label>
+    
+                            <div class="input-group">
+    
+                                <span class="input-group-text">
+                                    <i class="bi bi-envelope"></i>
+                                </span>
+    
+                                <input
+                                    type="email"
+                                    id="email"
+                                    class="form-control"
+                                    placeholder="seuemail@exemplo.com"
+                                    required>
+    
                             </div>
+    
                         </div>
-
-                        <div class="modal-body">
-                            <div class="mb-3">
-
-                                <label for="senha" class="form-label">Senha</label>
-                                <div class="input-group text">
-                                    <span class="input-group-text"><i class="bi bi-lock"></i></span>
-                                    <input type="password" id="senha" class="form-control">
-                                </div>
+    
+                        <div class="mb-3">
+    
+                            <label for="senha" class="form-label">
+                                Senha
+                            </label>
+    
+                            <div class="input-group">
+    
+                                <span class="input-group-text">
+                                    <i class="bi bi-lock"></i>
+                                </span>
+    
+                                <input
+                                    type="password"
+                                    id="senha"
+                                    class="form-control"
+                                    placeholder="Digite sua senha"
+                                    required>
+    
                             </div>
-                            <div id="mensagemErro" class="alert alert-danger d-none">
-                                E-mail ou senhas incorretos
-                            </div>
+    
                         </div>
-                        <div class="modal-footer">
-                            <button type="button" class="btn btn-secondary"> cancelar </button>
-                            <button type="button" class="btn btn-primary"> entrar </button>
+    
+                        <div id="mensagemErro" class="alert alert-danger d-none">
+                            E-mail ou senha incorretos.
                         </div>
-
+    
+                    </div>
+    
+                    <div class="modal-footer border-0">
+    
+                        <button
+                            type="button"
+                            class="btn btn-outline-secondary"
+                            data-bs-dismiss="modal">
+                            Cancelar
+                        </button>
+    
+                        <button
+                            type="submit"
+                            class="btn btn-primary">
+                            Entrar
+                        </button>
+    
+                    </div>
+    
+                </form>
+    
+            </div>
+    
+        </div>
+    
+    </div>
                 </form>
 
             </div>
