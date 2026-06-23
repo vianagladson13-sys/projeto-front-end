@@ -10,6 +10,42 @@
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
 
+    <style>
+        #home {
+            background:
+                radial-gradient(circle at top right, #dbeafe, #ffffff 50%);
+        }
+
+        .text-gradient {
+            background: linear-gradient(135deg,
+                    #0d6efd,
+                    #6f42c1);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .floating-card {
+            position: absolute;
+            top: 30px;
+            right: -40px;
+            background: white;
+        }
+
+        .floating-card-2 {
+            position: absolute;
+            bottom: 20px;
+            left: -40px;
+            background: white;
+        }
+
+        .min-vh-100 {
+            min-height: 100vh;
+        }
+    </style>
+
+
+
+
 </head>
 
 <body>
@@ -23,38 +59,34 @@
                 <a class="navbar-brand fw-bold" href="#">
                     🚀 Meu Projeto
                 </a>
-    
-                <button class="navbar-toggler" type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#menuPrincipal">
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#menuPrincipal">
                     <span class="navbar-toggler-icon"></span>
                 </button>
-    
+
                 <div class="collapse navbar-collapse" id="menuPrincipal">
                     <ul class="navbar-nav me-auto ms-4">
                         <li class="nav-item">
                             <a class="nav-link active" href="#">Home</a>
                         </li>
-    
+
                         <li class="nav-item">
                             <a class="nav-link" href="#">Recursos</a>
                         </li>
-    
+
                         <li class="nav-item">
                             <a class="nav-link" href="#">Preços</a>
                         </li>
-    
+
                         <li class="nav-item">
                             <a class="nav-link" href="#">Contato</a>
                         </li>
                     </ul>
-    
-                    <button class="btn btn-outline-light me-2" 
-                    data-bs-toggle="modal"
-                    data-bs-target="#modalLogin">
+
+                    <button class="btn btn-outline-light me-2" data-bs-toggle="modal" data-bs-target="#modalLogin">
                         Entrar
                     </button>
-    
+
                     <button class="btn btn-warning">
                         Cadastre-se
                     </button>
@@ -63,15 +95,144 @@
         </nav>
     </header>
     <main>
-        <section id="home" class="container py-5 text-center">
-            <h2 class="display-5 fw-bold">
-                Sistema simples com bootstrap
-            </h2>
-            <p class="lead">
-                Uma pagina inicial usando html 5,bootstrap,modal de login,cards e validação com javaScript.
+        <section id="home" class="py-5 position-relative overflow-hidden">
 
-            </p>
+            <div class="container">
 
+                <div class="row align-items-center min-vh-100">
+
+                    <div class="col-lg-6">
+
+                        <span class="badge rounded-pill bg-primary px-3 py-2 mb-4">
+                            🚀 Bootstrap 5 + JavaScript
+                        </span>
+
+                        <h1 class="display-2 fw-bold mb-4">
+                            Construa
+                            <span class="text-gradient">
+                                experiências digitais
+                            </span>
+                            incríveis
+                        </h1>
+
+                        <p class="lead text-secondary mb-4">
+                            Uma plataforma moderna criada com HTML5, Bootstrap 5 e
+                            JavaScript. Explore componentes interativos, autenticação,
+                            layouts responsivos e interfaces profissionais.
+                        </p>
+
+                        <div class="d-flex gap-3 flex-wrap mb-5">
+
+                            <button class="btn btn-primary btn-lg px-4 shadow">
+                                Começar Agora
+                            </button>
+
+                            <button class="btn btn-outline-dark btn-lg px-4">
+                                Ver Recursos
+                            </button>
+
+                        </div>
+
+                        <div class="row">
+
+                            <div class="col-4">
+                                <h3 class="fw-bold text-primary">10K+</h3>
+                                <small class="text-muted">
+                                    Usuários
+                                </small>
+                            </div>
+
+                            <div class="col-4">
+                                <h3 class="fw-bold text-primary">50+</h3>
+                                <small class="text-muted">
+                                    Componentes
+                                </small>
+                            </div>
+
+                            <div class="col-4">
+                                <h3 class="fw-bold text-primary">99%</h3>
+                                <small class="text-muted">
+                                    Performance
+                                </small>
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                    <div class="col-lg-6">
+
+                        <div class="position-relative">
+
+                            <div class="card border-0 shadow-lg rounded-4 p-4">
+
+                                <div class="d-flex justify-content-between mb-4">
+
+                                    <div>
+                                        <h5 class="fw-bold">
+                                            Dashboard
+                                        </h5>
+                                        <small class="text-muted">
+                                            Visão geral
+                                        </small>
+                                    </div>
+
+                                    <span class="badge bg-success">
+                                        Online
+                                    </span>
+
+                                </div>
+
+                                <div class="mb-4">
+
+                                    <label class="small text-muted">
+                                        Progresso do Projeto
+                                    </label>
+
+                                    <div class="progress mt-2" style="height:10px;">
+                                        <div class="progress-bar bg-primary" style="width:85%">
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                                <div class="row text-center">
+
+                                    <div class="col">
+                                        <div class="p-3 bg-light rounded-3">
+                                            <i class="bi bi-people fs-2 text-primary"></i>
+                                            <h5 class="mt-2">2.450</h5>
+                                            <small>Usuários</small>
+                                        </div>
+                                    </div>
+
+                                    <div class="col">
+                                        <div class="p-3 bg-light rounded-3">
+                                            <i class="bi bi-bar-chart fs-2 text-success"></i>
+                                            <h5 class="mt-2">87%</h5>
+                                            <small>Engajamento</small>
+                                        </div>
+                                    </div>
+
+                                </div>
+
+                            </div>
+
+                            <div class="floating-card card border-0 shadow rounded-4 p-3">
+                                ⭐ 4.9 de avaliação
+                            </div>
+
+                            <div class="floating-card-2 card border-0 shadow rounded-4 p-3">
+                                🎯 Projeto Responsivo
+                            </div>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
 
         </section>
 
@@ -152,105 +313,89 @@
     <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLoginLabel">
 
         <div class="modal-dialog modal-dialog-centered">
-    
+
             <div class="modal-content shadow-lg border-0 rounded-4">
-    
+
                 <form id="formLogin">
-    
+
                     <div class="modal-header border-0">
                         <h5 class="modal-title fw-bold" id="modalLoginLabel">
                             🔐 Login
                         </h5>
-    
-                        <button
-                            type="button"
-                            class="btn-close"
-                            data-bs-dismiss="modal">
+
+                        <button type="button" class="btn-close" data-bs-dismiss="modal">
                         </button>
                     </div>
-    
+
                     <div class="modal-body">
-    
+
                         <div class="mb-3">
-    
+
                             <label for="email" class="form-label">
                                 E-mail
                             </label>
-    
+
                             <div class="input-group">
-    
+
                                 <span class="input-group-text">
                                     <i class="bi bi-envelope"></i>
                                 </span>
-    
-                                <input
-                                    type="email"
-                                    id="email"
-                                    class="form-control"
-                                    placeholder="seuemail@exemplo.com"
+
+                                <input type="email" id="email" class="form-control" placeholder="seuemail@exemplo.com"
                                     required>
-    
+
                             </div>
-    
+
                         </div>
-    
+
                         <div class="mb-3">
-    
+
                             <label for="senha" class="form-label">
                                 Senha
                             </label>
-    
+
                             <div class="input-group">
-    
+
                                 <span class="input-group-text">
                                     <i class="bi bi-lock"></i>
                                 </span>
-    
-                                <input
-                                    type="password"
-                                    id="senha"
-                                    class="form-control"
-                                    placeholder="Digite sua senha"
+
+                                <input type="password" id="senha" class="form-control" placeholder="Digite sua senha"
                                     required>
-    
+
                             </div>
-    
+
                         </div>
-    
+
                         <div id="mensagemErro" class="alert alert-danger d-none">
                             E-mail ou senha incorretos.
                         </div>
-    
+
                     </div>
-    
+
                     <div class="modal-footer border-0">
-    
-                        <button
-                            type="button"
-                            class="btn btn-outline-secondary"
-                            data-bs-dismiss="modal">
+
+                        <button type="button" class="btn btn-outline-secondary" data-bs-dismiss="modal">
                             Cancelar
                         </button>
-    
-                        <button
-                            type="submit"
-                            class="btn btn-primary">
+
+                        <button type="submit" class="btn btn-primary">
                             Entrar
                         </button>
-    
+
                     </div>
-    
-                </form>
-    
-            </div>
-    
-        </div>
-    
-    </div>
+
                 </form>
 
             </div>
+
         </div>
+
+    </div>
+    </form>
+
+    </div>
+    </div>
 
     </div>
 
@@ -260,6 +405,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
         crossorigin="anonymous"></script>
+        <script src="./script.js"></script>
 </body>
 
 </html>
