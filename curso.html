@@ -14,11 +14,11 @@
         }
 
         .nav-link {
-            color: #000
+            color: #000 ! important;
         }
 
         .nav-link.nav-link:hover {
-            color: #000
+            color: #000 ! important;
         }
     </style>
 
@@ -60,6 +60,26 @@
         </nav>
 
     </header>
+    <main>
+        <div class="container py-4">
+            <div class="card shadow">
+                <div class="card-header bg-secondary text-white">
+                    <h1 class="h4 mb-0">
+                        <i class="bi bi-journal-bookmark-fill"></i>Cadastro de curso
+                    </h1>
+
+                </div>
+                <div class="card-body">
+                    <form id="formCurso">
+                        <div class="mb-3">
+                            <label for="nomeCurso" class="form-label">Nome do curso</label>
+                            <input type="text" class="form-control" id="nomeCurso">
+                        </div>
+                        </form>
+                </div>
+            </div>
+
+    </main>
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
