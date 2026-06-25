@@ -65,29 +65,35 @@
             <div class="card shadow">
                 <div class="card-header bg-secondary text-white">
                     <h1 class="h4 mb-0">
-                        <i class="bi bi-journal-bookmark-fill"></i>Cadastro de curso
+                        <i class="bi bi-journal-bookmark-fill"></i>Cadastro de Professores
                     </h1>
 
                 </div>
                 <div class="card-body">
-                    <form id="formCurso">
+                    <form id="formProf">
                         <div class="mb-3">
-                            <label for="nomeCurso" class="form-label">Nome do curso</label>
-                            <input type="text" class="form-control" id="nomeCurso">
+                            <label for="nomeProf" class="form-label">Nome do professor</label>
+                            <input type="text" class="form-control" id="nomeProf">
+                            <div class="invalid-feedback"> Preencha dados </div>
+                            <div class="valid-feedback"> certo </div>
                         </div>
 
                         <div class="mb-3">
-                            <label for="CargahorariaCurso" class="form-label">Carga horaria</label>
-                            <input type="number" class="form-control" id="CargahorariaCurso">
+                            <label for="registro" class="form-label">Registro</label>
+                            <input type="number" class="form-control" id="registro">
+                            <div class="invalid-feedback"> Preencha dados</div>
+                            <div class="valid-feedback"> certo </div>
                         </div>
 
                         <div class="mb-3">
-                            <label for="descriçãoCurso" class="form-label">Descrição</label>
-                            <input type="text" class="form-control" id="descriçãoCurso">
+                            <label for="funcaoAula" class="form-label">Função/Aula</label>
+                            <input type="text" class="form-control" id="funcaoAula">
+                            <div class="invalid-feedback"> Preencha dados </div>
+                            <div class="valid-feedback"> certo </div>
                         </div>
                         <button type="submit" class="btn btn-success">
                             <i class="bi bi-save"></i>
-                                salvar
+                            salvar
                         </button>
 
                     </form>
@@ -98,7 +104,7 @@
 
 
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
-    <script src="./script.js"></script>
+    <script src="./script-professor;.js"></script>
 
 </body>
 
